@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./WorkoutProgramBuilder.jsx";
+import InstallPrompt from "./InstallPrompt.jsx";
 import "./styles.css";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -39,5 +40,6 @@ if (typeof window !== "undefined" && !window.storage) {
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
+    <InstallPrompt />
   </React.StrictMode>
 );
