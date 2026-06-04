@@ -89,12 +89,14 @@ https://<your-username>.github.io/workout-builder/
 
 ## Step 5 — Install it on your phone
 
-Open that URL on your phone, then:
+Open that URL on your phone. The app now shows its own **install prompt**:
 
-- **iPhone (Safari):** Share button → **Add to Home Screen** → Add.
-- **Android (Chrome):** menu (⋮) → **Install app** / **Add to Home screen**.
+- **Android (Chrome/Edge):** a banner slides down with an **Install** button — one tap fires the native install dialog. (You can also use the browser menu ⋮ → **Install app**.)
+- **iPhone/iPad (Safari):** Safari can't trigger install automatically, so the banner shows the steps — tap the **Share** button → **Add to Home Screen** → Add.
 
-You'll get an icon on your home screen that launches the app full-screen, like a native app. It keeps working with no signal.
+The prompt hides itself once the app is installed and won't reappear for two weeks if you dismiss it. You'll get an icon on your home screen that launches the app full-screen, like a native app, and it keeps working with no signal.
+
+> The install banner lives only in this self-hosted build (`src/InstallPrompt.jsx`), so it never shows up inside the editor preview.
 
 ---
 

@@ -19,6 +19,7 @@ export default defineConfig({
       registerType: "autoUpdate",          // new deploys install in the background
       includeAssets: ["icons/icon.svg", "favicon.ico", "apple-touch-icon.png"],
       manifest: {
+        id: base,
         name: "Workout Builder",
         short_name: "Workouts",
         description: "Evidence-based program builder & logger with autoregulation.",
@@ -27,6 +28,7 @@ export default defineConfig({
         display: "standalone",
         display_override: ["standalone", "minimal-ui"],
         orientation: "portrait",
+        lang: "en",
         background_color: "#0C0B0E",
         theme_color: "#0C0B0E",
         categories: ["fitness", "health", "sports"],
